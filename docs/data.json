@@ -1,0 +1,20 @@
+here{
+    "projects": [
+        {
+            "id": "fucker",
+            "name": "Fucker Bot",
+            "icon": "🖐🏻🤓🖐🏻",
+            "desc": "ربات فحاشی هدفمند با پنل مدیریت شیشه‌ای",
+            "status": "online"
+        },
+        {
+            "id": "jojobala",
+            "name": "JoJobala Bot",
+            "icon": "🧠",
+            "desc": "ربات هوش مصنوعی با قابلیت پاسخگویی پیشرفته",
+            "status": "offline"
+        }
+    ],
+    "tickets": [],
+    "announcement": ""
+}
