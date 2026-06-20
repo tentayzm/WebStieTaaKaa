@@ -1,0 +1,107 @@
+Enter<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaaKaa - پروژه‌های تیم تاکا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-content">
+            <div class="logo">TaaKaa</div>
+            <div class="header-contact">
+                <a href="https://t.me/llxisagi">📩 @llxisagi</a>
+            </div>
+        </div>
+        <div id="announcement" class="announcement-bar" style="display:none;">
+            <!-- اطلاعیه از سمت ادمین -->
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="hero-glass">
+            <h1>تیم توسعه‌دهنده <span>TaaKaa</span></h1>
+            <p>ساخت ربات‌های هدفمند، سریع و قدرتمند برای تلگرام</p>
+        </div>
+    </section>
+
+    <!-- ===== WHY TAAKAA ===== -->
+    <section class="why-section">
+        <h2>چرا <span>TaaKaa</span>؟</h2>
+        <div class="boxes-grid">
+            <div class="box" data-delay="0">
+                <div class="box-icon">👥</div>
+                <h3>تیم کوچک، قدرتمند</h3>
+                <p>تیم دولوپ با تعداد نفرات کم ولی فوق‌العاده حرفه‌ای</p>
+            </div>
+            <div class="box" data-delay="100">
+                <div class="box-icon">⚡</div>
+                <h3>سرعت بالا</h3>
+                <p>توسعه‌ی سریع پروژه‌ها بدون افت کیفیت</p>
+            </div>
+            <div class="box" data-delay="200">
+                <div class="box-icon">🤝</div>
+                <h3>کمک به هم‌میهنان</h3>
+                <p>تلاش برای ارائه‌ی ابزارهای مفید و رایگان</p>
+            </div>
+            <div class="box" data-delay="300">
+                <div class="box-icon">🎯</div>
+                <h3>پروژه‌های هدفمند</h3>
+                <p>هر پروژه برای رفع یک نیاز خاص طراحی شده</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects-section">
+        <h2>پروژه‌های <span>TaaKaa</span></h2>
+        <div id="projects-container" class="projects-grid">
+            <!-- پروژه‌ها توسط JavaScript از data.json لود می‌شوند -->
+        </div>
+    </section>
+
+    <!-- ===== TICKET ===== -->
+    <section class="ticket-section">
+        <h2>📩 ارسال تیکت / پیشنهاد</h2>
+        <form id="ticket-form">
+            <input type="text" id="ticket-name" placeholder="نام شما" required>
+            <input type="text" id="ticket-project" placeholder="نام پروژه (اختیاری)">
+            <textarea id="ticket-message" placeholder="متن پیشنهاد یا انتقاد..." required></textarea>
+            <button type="submit">ارسال تیکت</button>
+        </form>
+        <div id="ticket-status"></div>
+    </section>
+
+    <!-- ===== ADMIN PANEL ===== -->
+    <section class="admin-section" style="display:none;" id="admin-panel">
+        <h2>🔐 پنل مدیریت</h2>
+        <div class="admin-box">
+            <h3>وضعیت پروژه‌ها</h3>
+            <div id="admin-projects"></div>
+            <h3>📢 اطلاعیه سراسری</h3>
+            <input type="text" id="announcement-input" placeholder="متن اطلاعیه...">
+            <button onclick="setAnnouncement()">ثبت اطلاعیه</button>
+            <h3>📩 تیکت‌های دریافتی</h3>
+            <div id="admin-tickets"></div>
+            <button onclick="logoutAdmin()">🚪 خروج از پنل</button>
+        </div>
+    </section>
+
+    <!-- ===== ADMIN LOGIN ===== -->
+    <div class="admin-login" id="admin-login">
+        <button onclick="loginAdmin()">🔐 ورود سودو / ادمین</button>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>توسعه‌یافته توسط تیم TaaKaa • ۲۰۲۶</p>
+        <p>📩 @llxisagi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
